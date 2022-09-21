@@ -6,6 +6,7 @@ public abstract class BaseDisc {
     private String dataType;
     private String name;
     private String contents;
+    //or could do private ArrayList<String> contents = new ArrayList<>();
     private String discType;
 
     public BaseDisc(int storageCapacity, int discSpeed, String dataType, String name, String contents, String discType) {
@@ -69,6 +70,11 @@ public abstract class BaseDisc {
         System.out.println("Disc type: " + this.discType +
         "\n" + "Disc Name: " + this.name +
         "\n" + "Disc Contents: " + this.contents);
+
+        //or could do toString method
+        //or could do:
+        //public String getDiscInfo() {
+        //return "Name: " + this.name etc.
     }
 
 
